@@ -1,0 +1,150 @@
+
+
+/* font-family: 'Mooli', sans-serif;     font-family: 'Mooli', sans-serif;  */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+
+@import url(reset.css);
+
+.body{
+ background-color: rgb(224, 217, 217)
+}
+.wrapper{
+    max-width: 81.25rem;
+
+
+}
+
+
+.main-img img{
+    max-width: 22.5rem;
+    max-height: 22.5rem;
+    border-radius: 50% !important;
+    display: block;
+    background-size: cover;
+    transition: box-shadow 2s; /* Задаємо тривалість анімації 3 секунди */
+}
+.main-img img:hover{
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+}
+.header{
+    display: block;
+    text-align: center;
+    padding: 50px;
+}
+
+
+.main-title{
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    font-family: 'Mooli', sans-serif;
+    font-size: 45px;
+    font-weight: 500;
+}
+
+
+.main{
+    position: relative;
+    bottom: 35px;
+    max-width: 35rem;
+    max-height: 1080px;
+}
+.icon-1 {
+    border: 5px solid transparent; /* Рамка без колірної обводки */
+    background-image: linear-gradient(to right, #401, #600, #004); /* Змінений градієнт фону */
+    border-image: linear-gradient(to right, #401, #600, #004); /* Змінений градієнт рамки */
+    border-image-slice: 1; /* Рамка заповнює всю рамку */
+    border-image-width: 5px; /* Ширина рамки */
+    border-image-outset: 0; /* Відступ рамки */
+    border-image-repeat: round; /* Повторення рамки по всій довжині */
+    background: linear-gradient(to right, #f06, #9059ff, #00bcd4);
+    display: flex;
+    align-items: center; /* Вирівнює вміст по вертикалі по центру */
+    justify-content: flex-start;
+}
+
+
+.list img{
+
+width: 42px;
+height: 42px;
+margin-right: 130px;
+}
+
+
+.icon-2 {
+    border: 5px solid transparent; /* Рамка без колірної обводки */
+    background-image: linear-gradient(to right, #401, #600, #004); /* Змінений градієнт фону */
+    border-image: linear-gradient(to right, #401, #600, #004); /* Змінений градієнт рамки */
+    border-image-slice: 1; /* Рамка заповнює всю рамку */
+    border-image-width: 5px; /* Ширина рамки */
+    border-image-outset: 0; /* Відступ рамки */
+    border-image-repeat: round; /* Повторення рамки по всій довжині */
+    background: linear-gradient(to right, #f06, #9059ff, #00bcd4);
+    margin-top: 40px;
+    display: flex;
+    align-items: center; /* Вирівнює вміст по вертикалі по центру */
+    justify-content: flex-start;
+}
+
+.icon-3 {
+    border: 5px solid transparent; /* Рамка без колірної обводки */
+    background-image: linear-gradient(to right, #401, #600, #004); /* Змінений градієнт фону */
+    border-image: linear-gradient(to right, #401, #600, #004); /* Змінений градієнт рамки */
+    border-image-slice: 1; /* Рамка заповнює всю рамку */
+    border-image-width: 5px; /* Ширина рамки */
+    border-image-outset: 0; /* Відступ рамки */
+    border-image-repeat: round; /* Повторення рамки по всій довжині */
+    background: linear-gradient(to right, #f06, #9059ff, #00bcd4);
+    margin-top: 40px;
+    display: flex;
+    align-items: center; /* Вирівнює вміст по вертикалі по центру */
+    justify-content: flex-start;
+}
+
+.icon-4 {
+    border: 5px solid transparent; /* Рамка без колірної обводки */
+    background-image: linear-gradient(to right, #401, #600, #004); /* Змінений градієнт фону */
+    border-image: linear-gradient(to right, #401, #600, #004); /* Змінений градієнт рамки */
+    border-image-slice: 1; /* Рамка заповнює всю рамку */
+    border-image-width: 5px; /* Ширина рамки */
+    border-image-outset: 0; /* Відступ рамки */
+    border-image-repeat: round; /* Повторення рамки по всій довжині */
+    background: linear-gradient(to right, #f06, #9059ff, #00bcd4);
+    margin-top: 40px;
+    display: flex;
+    align-items: center; /* Вирівнює вміст по вертикалі по центру */
+    justify-content: flex-start;
+}
+
+
+/* Базовий стиль для кнопки */
+
+
+/* Базовий стиль для кнопки */
+a.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #f06, #9059ff, #00bcd4);
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.3s ease; /* Зміна кольору при наведенні */
+    background-size: 200% auto;
+}
+
+/* Зміна кольору при наведенні миші */
+a.button:hover {
+    background-position: right center; /* Зміна позиції градієнту при наведенні миші */
+}
+
+
+
+
+
+
