@@ -1,0 +1,210 @@
+@import url(reset.css);
+@import url(fonts.css);
+
+
+body {
+    background-color: black;
+
+
+}
+
+.wrapper {
+    margin: 60px 0 0 85px;
+    max-width: 1400px;
+    /* border: 10px solid white; */
+    color: white;
+}
+
+p {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    padding-top: 35px;
+    text-indent: 50px;
+    letter-spacing: 0.4px;
+    word-spacing: 2px;
+    line-height: 1.34;
+}
+
+h2 {
+    color: greenyellow;
+    text-shadow: 6px 4px 15px, -6px -4px 20px greenyellow;
+    font-style: italic;
+    font-family: 'Pobeda', Arial, Helvetica, sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+h3{
+    color: greenyellow;
+    text-shadow: 6px 4px 15px, -6px -4px 20px greenyellow;
+    font-style: italic;
+    font-family: 'Oswald', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+
+#down a {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 40px;
+    padding-left: 45px;
+    color: red;
+    text-decoration: none;
+}
+
+.img-1 img {
+    max-width: 1320px;
+    border-radius: 12px;
+    padding-top: 25px;
+}
+
+.main-title {
+    font-family: 'Pobeda', Arial, sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: aqua;
+    padding-top: 30px;
+}
+
+
+.text-1 {
+    text-indent: 50px;
+    letter-spacing: 0.4px;
+    word-spacing: 2px;
+    line-height: 1.34;
+}
+
+span {
+    text-decoration: underline;
+    color: blueviolet;
+}
+
+.text-1 a {
+    text-decoration: underline;
+    color: rgb(118, 118, 212)
+}
+
+
+.img-title-1 p {
+    text-indent: 50px;
+}
+
+.img-2 img:nth-child(1) {
+    width: 725px;
+    padding-top: 40px;
+}
+
+.img-2 img:nth-child(2) {
+    width: 565px;
+    padding-top: 40px;
+
+}
+
+.img-2 img:nth-child(4){
+    width: 40px;
+}
+
+.navigation-container {
+    text-align: center;
+    max-width: 600px;
+    border: 2px solid white;
+    margin: 70px 0 0 0;
+    padding: 30px 0 30px 0;
+    border: 1px solid;
+    text-transform: uppercase;
+
+}
+
+.navigation-title {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    text-decoration: underline;
+    
+    
+
+}
+
+
+.navigation{
+    padding: 35px;
+    font-size: 22px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    line-height: 1.5;
+    color: brown;
+}
+
+.title-2 h2 {
+    font-size: 35px;
+    padding-top: 40px;
+}
+
+.parussia {
+    text-decoration: line-through;
+    color: darkgoldenrod;
+}
+
+.img-3 img{
+    width: 650px;
+    padding-top: 50px;
+}
+
+.title-3{
+    font-size: 35px;
+    padding-top: 40px;
+}
+
+.plot p{
+    padding-top: 5px;
+}
+
+.img-4 img{
+    width: 1400px;
+    padding-top: 50px;
+}
+
+.img-5{
+    padding-top: 50px;
+}
+
+.img-5 img:nth-child(1){
+    width: 540px;
+    height: 360px;
+}
+
+.img-5 img:nth-child(2){
+    width: 760px;
+    height: 360px;
+}
+
+.dop-infa-title h2{
+    padding-top: 50px;
+}
+
+.title-over{
+    padding-top: 35px;
+}
+
+.over-text{
+    font-style: oblique;
+}
+
+
+.footer{
+    padding-top: 40px;
+}
+#upp a{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 40px;
+    padding-left: 45px;
+    color: red;
+    text-decoration: none;
+}

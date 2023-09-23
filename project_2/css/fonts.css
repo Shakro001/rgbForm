@@ -1,0 +1,26 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+
+
+@font-face {
+    font-family: 'Pobeda';
+    src: 
+    url("../fonts/Pobeda-Bold.woff2") format("woff2"),
+    url(../fonts/Pobeda-Bold.woff) format("woff");
+}
+@font-face {
+    font-family: 'Pobeda';
+    src: 
+    url('../fonts/Pobeda-Regular.woff2') format("woff2"),
+    url(../fonts/Pobeda-Regular.woff) format("woff");
+ 
+}
+
+/* @font-face {
+    font-family: 'Helvetica';
+    src:
+        url('../fonts/Helvetica-Bold.woff2') format('woff2'),
+        url('../fonts/Helvetica-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+  } */
