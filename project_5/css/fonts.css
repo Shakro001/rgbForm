@@ -1,0 +1,13 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&display=swap');
+
+
+@font-face {
+    font-family: 'Recoleta';
+    src: local('Recoleta SemiBold'), local('Recoleta-SemiBold'),
+        url('../fonts/Recoleta-SemiBold.woff2') format('woff2'),
+        url('../fonts/Recoleta-SemiBold.woff') format('woff'),
+        url('../fonts/Recoleta-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+  }
