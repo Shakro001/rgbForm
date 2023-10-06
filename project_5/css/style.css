@@ -46,7 +46,6 @@
 
 .container {
     max-width: 1000px;
-    border: 2px solid black;
     margin: 0 auto;
 }
 
@@ -88,7 +87,7 @@
 
 .main-paragraph-container {
     max-width: 374px;
-    ;
+    
     color: #163A24;
     font-family: "Noto Sans";
     font-size: 18px;
@@ -167,7 +166,6 @@ li {
 .container-2-content {
     margin: 0 auto;
     max-width: 1185px;
-    border: 2px solid black;
     font-size: 0;
 }
 
@@ -242,7 +240,6 @@ li {
     max-width: 1180px;
     height: 775px;
     margin: 0 auto 180px;
-    border: 2px solid black;
     background-image: url(../img/bg-container-3.png);
     background-repeat: no-repeat;
     background-position: 0 318px;
@@ -329,7 +326,6 @@ li {
 .container-5 {
     max-width: 1250px;
     margin: 0 auto 230px;
-    border: 2px solid black;
 }
 
 
