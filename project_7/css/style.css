@@ -1,0 +1,227 @@
+@import url(fonts.css);
+@import url(reset.css);
+
+body {
+    background-color: black;
+    background-image: url(../img/killua_background\ \(2\).png);
+    background-repeat: no-repeat;
+    background-position: 0 200px;
+    background-size: 500px;
+}
+
+.wrapper{
+    background-image: url(../img/gon_background.png);
+    background-repeat: no-repeat;
+    background-position: 1300px 250px;
+    background-size: 700px 1200px;
+    
+}
+
+
+.header-container {
+    font-size: 0;
+    max-width: 100%;
+    background-color: #191919;
+}
+
+
+.header-logo img {
+    max-width: 200px;
+}
+
+
+
+
+.header-navigation:not(:first-child) {
+    max-width: 1000px;
+
+}
+
+.header-navigation ol li {
+    font-size: 25px;
+    font-family: 'Tilt Neon', sans-serif;
+    color: rgb(197, 162, 162);
+    display: inline-block;
+    letter-spacing: 4px;
+
+
+}
+
+.header-navigation ol li:nth-child(2) {
+    padding-left: 300px;
+}
+
+
+.header-navigation ol li:not(:last-child):not(:first-child) {
+    margin-right: 120px;
+}
+
+.header-navigation ol li:hover {
+    color: rgb(177, 131, 46);
+}
+
+.header-navigation img {
+    vertical-align: middle;
+}
+
+
+
+
+/* ------------------ */
+
+
+.main {
+    max-width: 950px;
+
+    background-color: #191919;
+    margin: 0 auto;
+    
+
+
+}
+
+.main-title {
+    font-size: 60px;
+    font-family: 'Tilt Neon', sans-serif;
+    color: rgb(233, 216, 216);
+    text-align: center;
+    padding-top: 25px;
+}
+
+.avtor {
+    font-size: 13px;
+    font-family: 'Autour One';
+    color: #fff;
+    text-align: center;
+    letter-spacing: 3px;
+    line-height: 30px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+
+}
+
+
+
+.description-main-container {
+    font-size: 0;
+    margin-bottom: 200px;
+}
+
+.image-description,
+img {
+    display: inline-block;
+    max-width: 400px;
+    margin-right: 70px;
+    vertical-align: bottom;
+    border-radius: 3px;
+}
+
+.text-description-main-container {
+    display: inline-block;
+    max-width: 470px;
+}
+
+
+.text-description-main-container p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: rgb(208, 118, 58);
+    letter-spacing: 5px;
+    line-height: 27px;
+
+}
+
+
+.container-video {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.video,
+video {
+    max-width: 700px;
+    margin: 0 auto 30px;
+
+
+}
+
+
+.button {
+    font-size: 25px;
+    font-family: Quicksand;
+    text-align: center;
+    
+
+}
+
+.button ol li{
+    display: inline-block;
+
+}
+
+.button ol li:nth-child(1){
+    background: #e85f24;
+    padding: 12px 30px;
+    border-radius: 10px;
+}
+
+.button ol li:nth-child(1):hover{
+    background-color: rgb(242, 133, 44);
+}
+
+.button ol li:nth-child(2){
+    background-color: #783aa1;
+    padding: 12px 30px;
+    margin: 0 176.5px;
+    border-radius: 10px;
+}
+
+.button ol li:nth-child(2):hover{
+    background-color: #9f5ace;
+}
+
+
+.button ol li:nth-child(3){
+    background: #9aa777;
+    padding: 12px 30px;
+    border-radius: 10px;
+}
+
+
+.button ol li:nth-child(3):hover{
+    background-color: #a3b966;
+}
+
+
+#video-2{
+    display: none;
+}
+
+#video-2:target{
+    display: inline-block;
+}
+
+
+.gif{
+    min-height: 100%;
+    
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(30,28,145,1) 15%, rgba(204,7,137,1) 48%, rgba(6,4,53,1) 85%, rgba(46,0,212,1) 100%);
+    background-size: contain;
+    font-size: 0;
+}
+
+.gif iframe{
+    display: inline-block;
+    margin-right: 150px;
+
+}
+
+.gif iframe:nth-child(3n + 1){
+    margin-bottom: 30px;
+}
+
+.gif iframe{
+    vertical-align: top;
+}
+
