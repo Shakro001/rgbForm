@@ -1,0 +1,45 @@
+@import url(fonts.css);
+@import url(reset.css);
+
+
+.explore-container {
+    background: url(../img/explorer_main_bg.webp)0 0/cover no-repeat, url(../img/fontisto_quote-left.svg)100px 20px / cover no-repeat;
+    min-height: 937px;
+
+
+}
+
+.container-text {
+    max-width: 766px;
+    margin: 0 auto;
+    padding-top: 214px;
+
+
+}
+
+.main-title {
+    color: var(--general-white, #FFF);
+    font-family: Poppins;
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 1.40;
+
+}
+
+.under-title {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 2.00;
+    margin-bottom: 57px;
+}
+
+.paragraph {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.75;
+}
