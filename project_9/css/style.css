@@ -1,0 +1,491 @@
+@import url(fonts.css);
+@import url(reset.css);
+
+
+body {
+    background: url(../img/car.webp) right/1000px no-repeat;
+    background-color: black;
+}
+
+.wrapper {
+    overflow: clip;
+    min-height: 100%;
+
+}
+
+[class*="container"] {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+
+
+.header__container {
+    margin-top: 40px;
+    margin-bottom: 179px;
+}
+
+
+.menu__icon {
+
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.menu__icon--margin {
+    margin-right: 409px;
+}
+
+.menu {
+    text-align: right;
+    font-size: 0;
+}
+
+.menu__item {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+
+
+.menu__item--margin:not(:last-child) {
+    margin-right: 48px;
+
+}
+
+.menu__link {
+    color: #FFF;
+    font-family: Be Vietnam Pro;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.50;
+    letter-spacing: 0.16px;
+}
+
+.button {
+    padding: 12px 24px;
+    background-color: #EE8313;
+    color: #FFF;
+    font-family: Be Vietnam Pro;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    /* 150% */
+    letter-spacing: 0.16px;
+}
+
+.menu__link.button {
+    margin-left: 65px;
+}
+
+/* .menu__item:not(:last-child):hover::after{
+    content: "";
+    display: block;
+    height: 2px;
+    width: 95%;
+    background-color: blue;
+    position: absolute;
+    top: 28px;
+
+} */
+
+.header__menu>:not(:last-child) .menu__link:hover{
+    transition: 0.2s;
+    color: #EE8313;
+}
+
+
+
+
+
+.page__container {
+    font-size: 0;
+}
+
+.page__title {
+    margin-bottom: 32px;
+}
+
+.title {
+    max-width: 591px;
+    color: #FFF;
+    font-family: "Be Vietnam Pro";
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 1.23;
+    letter-spacing: 0.312px;
+}
+
+.page__paragraph {
+    margin-bottom: 48px;
+}
+
+.paragraph {
+    max-width: 474px;
+    color: #FFF;
+    font-family: Be Vietnam Pro;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.64;
+    letter-spacing: -0.408px;
+    opacity: 0.8;
+}
+
+
+
+.page__button-container--margin {
+    margin-bottom: 61px;
+}
+
+.page__button:last-child {
+    margin-left: 35px;
+    color: #EE8313;
+    background-color: transparent;
+    border: 1px solid #EE8313;
+}
+
+
+.page__achivments span {
+    color: #FFF;
+    font-family: Be Vietnam;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.30;
+    letter-spacing: -0.164px;
+    margin-right: 16px;
+    vertical-align: middle;
+}
+
+.page__achivments--margin {
+    margin-right: 40px;
+}
+
+.page__achivments {
+    padding-bottom: 120px;
+    display: inline-block;
+    color: #FFF;
+    font-family: Be Vietnam;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.50;
+    letter-spacing: 0.16px;
+}
+
+
+
+
+
+.page__cards-container {
+    margin: 0 auto;
+
+}
+
+.cards__title {
+    padding-top: 60px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+
+
+}
+
+.cards__item {
+    position: relative;
+    display: inline-block;
+}
+
+.cards__item--margin:nth-child(even) {
+    margin-right: 32px;
+}
+
+.cards__item--margin:nth-child(1),
+.cards__item--margin:nth-child(2) {
+    margin-bottom: 32px;
+}
+
+.cards__car-name {
+    color: #ffffff;
+    font-family: "Be Vietnam Pro";
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.30;
+    letter-spacing: 0.24px;
+    position: absolute;
+    top: 48px;
+    left: 48px;
+}
+
+.cards__discover {
+    color: #ffffff;
+    font-family: "Be Vietnam Pro";
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.33;
+    letter-spacing: 0.144px;
+    position: absolute;
+    top: 444px;
+    left: 389px;
+
+}
+
+.cards__discover h5 {
+    display: inline-block;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.page__info-cards {
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+
+.info-cards__title {
+    margin-bottom: 66px;
+
+}
+
+.info-cards__name {
+    color: #FFF;
+    font-family: Be Vietnam Pro;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.33;
+    letter-spacing: 0.144px;
+    margin-bottom: 16px;
+
+}
+
+.info-cards__container {
+    display: inline-block;
+}
+
+.info-cards__container:not(:last-child) {
+    margin-right: 24px;
+}
+
+.info-cards__photo img {
+    margin-bottom: 24px;
+}
+
+.info-cards__paragraph {
+    max-width: 384px;
+}
+
+
+.page__city-cards {
+    padding-bottom: 60px;
+}
+
+
+.city-cards__title {
+    padding-top: 60px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+
+
+
+
+.city-cards__item {
+    display: inline-block;
+    max-width: 385px;
+    background: url(../img/city_cards/bg_for_city_cards.webp);
+    position: relative;
+
+}
+
+.city-cards__image {
+    max-width: 384px;
+}
+
+.city-cards__name {
+    margin: 24px 0 10px 24px;
+}
+
+.city-cards__paragraph {
+    margin: 0 0 24px 24px;
+}
+
+.city-cards__price {
+    color: #FFF;
+    font-family: "Be Vietnam Pro";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.75;
+    letter-spacing: 0.066px;
+    padding-left: 40px;
+    background: url(../img/city_cards/cars_icon.svg) no-repeat;
+}
+
+
+.city-cards__price--margin {
+    margin: 0 0 17px 24px;
+}
+
+.city-cards__search {
+    color: #EE8313;
+    font-family: "Be Vietnam Pro";
+    font-size: 16px;
+    line-height: 1.75;
+    letter-spacing: 0.066px;
+    padding-bottom: 24px;
+}
+
+
+.city-cards__search--margin {
+    margin-left: 24px;
+}
+
+
+.city-cards__item--margin:nth-child(1),
+.city-cards__item--margin:nth-child(2),
+.city-cards__item--margin:nth-child(3),
+.city-cards__item--margin:nth-child(5),
+.city-cards__item--margin:nth-child(6) {
+    margin-right: 24px;
+}
+
+.city-cards__item--margin:nth-child(1),
+.city-cards__item--margin:nth-child(2),
+.city-cards__item--margin:nth-child(3) {
+    margin-bottom: 24px;
+}
+
+
+.page__location {
+    padding-top: 102px;
+}
+
+.location-title {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.location__image {
+    padding-bottom: 102px;
+}
+
+.footer {
+    background: #1F1905;
+    max-width: 100%;
+    min-height:380px;
+    margin: 0 auto;
+}
+
+.footer__container {
+    position: relative;
+    font-size: 0;
+}
+
+
+.footer__logo {
+    display: inline-block;
+    padding-top: 40px;
+}
+
+.footer__icon--margin img {
+    vertical-align: top;
+    margin-right: 20px;
+    margin-bottom: 65px;
+}
+
+.footer__item {
+    position: absolute;
+    top: 55px;
+
+}
+
+
+.footer__description {
+    color: #FFF;
+    font-family: "Be Vietnam Pro";
+    font-size: 18px;
+    line-height: 1.77;
+    max-width: 235px;
+}
+
+
+
+.footer__list-item {
+    display: inline-block;
+    position: relative;
+    left: 318px;
+    top: 20px;
+
+}
+
+.footer__list--margin {
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.11;
+    margin-bottom: 32px;
+}
+
+.footer__link-item {
+    color: #FFF;
+    font-family: "Be Vietnam Pro";
+    font-size: 16px;
+    line-height: 1.25;
+}
+
+.footer__link-item--fz {
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 16px;
+    line-height: 1.25;
+
+}
+
+.footer__link-item--margin {
+    margin-bottom: 21px;
+}
+
+.footer__list-item:nth-child(3) {
+    position: relative;
+    left: 450px;
+}
+
+.footer__list-item:nth-child(4) {
+    position: relative;
+    left: 560px;
+}
+
+
+.footer__under {
+    max-width: 100%;
+    background-color: #EE8313;
+    padding: 20px 0;
+    color: #FFF;
+    font-family: "Be Vietnam Pro";
+    font-size: 16px;
+    position: relative;
+    top: 110px;
+    text-align: center;
+}
+
+
