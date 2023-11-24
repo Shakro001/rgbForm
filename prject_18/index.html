@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practici cpde</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+    <div class="main">
+        <div class="main__form form">
+            <div class="form__title">
+                <h2>Login</h2>
+            </div>
+            <form action="#" name="login_form" id="login_form" autocomplete="off" enctype="multipart/form-data" method="GET">
+
+                <div class="form__input-box">
+                    <input type="text" name="form[]" id="username" required maxlength="50" autofocus>
+                    <label for="username">Username</label>
+                </div>
+
+                <div class="form__input-box">
+                    <input type="password" name="form[]" id="pass" required maxlength="50" minlength="8">
+                    <label for="pass">Password</label>
+                </div>
+
+                <div class="form__remember form__remember--margin">
+                    <label for="#"><input name="form[]" type="checkbox">Remember me</label>
+                </div>
+                <div class="form__button form__button--margin"><button type="submit" name="form[]">Login</button></div>
+                <div class="form__sign-up">
+                    <p>Don't have an account? <a href="#">Sign up</a></p>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
