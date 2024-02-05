@@ -1,0 +1,150 @@
+@import "fonts.scss";
+@import "function.scss";
+@import "reset.scss";
+
+body {
+    background-color: rgb(37, 6, 66);
+    color: #fff;
+    font-family: "Sporting Grotesque";
+    overflow-x: hidden;
+}
+
+.wrapper {
+    min-height: 100vh;
+    overflow: clip;
+    width: 100vw;
+}
+
+[class*="__container"] {
+    max-width: toRem(1230);
+    padding: 0 toRem(15);
+
+    margin: 0 auto;
+}
+
+//  header
+.header {
+    // .header__container
+    position: relative;
+    width: 84.1%;
+    margin: 0 auto;
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        column-gap: toRem(5);
+        padding-top: toRem(20);
+    }
+
+    // .header__logo
+
+    &__logo {
+        position: relative;
+        z-index: 100;
+        font-weight: 700;
+        font-size: clamp(0.688rem, 0.532rem + 0.55vw, 0.875rem);
+        line-height: 1.36;
+        padding-left: toRem(45);
+        &:before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            width: toRem(40);
+            height: toRem(36);
+            background: url(../img/header/headerLogo.svg);
+        }
+    }
+
+    // .header__menu
+
+    &__menu {
+        @media (max-width: toRem(991)) {
+            position: absolute;
+            left: 0;
+            padding-left: toRem(15);
+            top: 0;
+            transition: all .5s;
+            transform: translateY(-100%);
+            background-color: #192033;
+            padding-top: toRem(80);
+            padding-bottom: toRem(35);
+            width: 100%;
+            &.active{
+                transition: all .5s;
+                transform: translateY(0%);
+                }
+        }
+
+       
+        
+        nav {
+            @media (max-width: toRem(991)) {
+                flex-direction: column;
+                row-gap: toRem(24);
+            }
+            display: inline-flex;
+            column-gap: toRem(25.5);
+        }
+    }
+
+    // .header__link
+
+    &__link {
+        font-weight: 700;
+        font-size: toRem(13);
+        color: grey;
+        transition: color 0.3s;
+        &:hover {
+            color: rgb(187, 172, 172);
+        }
+    }
+
+    &__burger {
+        @media(min-width: toRem(991)){
+            display: none;
+        }
+        position: relative;
+        z-index: 100;
+        width: 21px;
+        height: 19px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        
+       &.active{
+        
+        & div:nth-child(1) {
+            top: 50%;
+            transform: rotate(45deg);
+        }
+        & div:nth-child(2) {
+            transform: translateX(25px);
+        }& div:nth-child(3) {
+            top: 50%;
+            transform: rotate(-45deg);
+        }
+       }
+        div {
+            transition: all .5s;
+            position: absolute;
+            width: 100%;
+            background-color: #fff;
+            height: 3px;
+            border-radius: 50px;
+        }
+        & div:nth-child(1) {
+            top: 0;
+            
+        }
+        & div:nth-child(3) {
+           bottom: 0;
+            
+        }
+    }
+    
+}
+
+
+
