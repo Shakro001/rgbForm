@@ -106,7 +106,7 @@ textarea {
             transform: translateX(100%);
     right: 0;
     top: 0;
-    width: 45%;
+    width: 60%;
     height: 100%;
     background-color: rgb(177, 155, 155);
     z-index: 10;
@@ -213,15 +213,20 @@ textarea {
 .page-home {
   position: relative;
   min-height: 100vh;
-  position: relative;
+}
+@media (max-width: 45.625rem) {
+  .page-home {
+    min-height: 100%;
+    padding-bottom: 12.5rem;
+  }
 }
 .page-home__bg {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  z-index: -5;
+  height: 100vh;
+  z-index: -3;
 }
 .page-home__bg img {
   width: 100%;
@@ -391,12 +396,12 @@ textarea {
 }
 
 .page-new-anime {
-  background-color: #813434;
+  background-color: #ffffff;
   position: relative;
   z-index: 1;
 }
 .page-new-anime__container {
-  padding-top: 5rem;
+  padding-top: clamp(1.25rem, -3.036rem + 17.14vw, 5rem);
   max-width: 81.25rem;
 }
 .page-new-anime__title {

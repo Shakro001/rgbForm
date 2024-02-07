@@ -39,7 +39,7 @@
             transform: translateX(100%);
             right: 0;
             top: 0;
-            width: 45%;
+            width: 60%;
             height: 100%;
             background-color: rgba(177, 155, 155, 1);
             z-index: 10;
@@ -133,14 +133,18 @@
 .page-home {
     position: relative;
     min-height: 100vh;
-    position: relative;
+    @media(max-width: toRem(730)){
+        min-height: 100%;
+        padding-bottom: toRem(200);
+    }
     &__bg {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
-        height: 100%;
-        z-index: -5;
+        height: 100vh;
+        z-index: -3;
+        
         img {
             width: 100%;
             height: 100%;
@@ -156,6 +160,7 @@
         @media (max-width: toRem(1125)) {
             justify-content: center;
         }
+        
     }
     // .page-home__text
 
@@ -260,13 +265,13 @@
 }
 
 .page-new-anime {
-    background-color: #813434;
+    background-color: #ffffff;
     // .page-new-anime__container
     position: relative;
     z-index: 1;
 
     &__container {
-        padding-top: toRem(80);
+        padding-top: clamp(1.25rem, -3.036rem + 17.14vw, 5rem);
         max-width: toRem(1300);
     }
 
