@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Nosifer&family=Poppins:wght@400;500;600;700&family=Varela&display=swap");
 *,
 *::before,
@@ -397,6 +396,7 @@ textarea {
 
 .page-new-anime {
   background-color: #ffffff;
+  margin-bottom: 5rem;
   position: relative;
   z-index: 1;
 }
@@ -405,12 +405,6 @@ textarea {
   max-width: 81.25rem;
 }
 .page-new-anime__title {
-  font-family: Poppins;
-  font-weight: 600;
-  font-size: clamp(1.25rem, 1.159rem + 0.45vw, 1.5rem);
-  line-height: 1.17;
-  letter-spacing: 0.02em;
-  color: #313131;
   margin-bottom: 1.75rem;
 }
 .page-new-anime__content {
@@ -494,6 +488,132 @@ textarea {
   bottom: 7px;
 }
 
+@media (max-width: 991px) {
+  .page-new-anime__content > :nth-child(odd):not(:nth-child(1)) {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+.page-trend__container {
+  max-width: 81.25rem;
+  margin: 0 auto;
+}
+.page-trend__title {
+  margin-bottom: 1.75rem;
+}
+
+.page-trend__container {
+  max-width: 81.25rem;
+  overflow: hidden;
+  border: 1px solid black;
+}
+.page-trend__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.page-trend__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  min-width: 0;
+  gap: 30px;
+}
+.page-trend__item {
+  max-width: 20.5625rem;
+  width: 100%;
+}
+.page-trend__image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin-bottom: 1.125rem;
+}
+.page-trend__image img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 329/254;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+.page-trend__image img:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.page-trend__genre {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: clamp(0.563rem, 0.407rem + 0.55vw, 0.75rem);
+  color: #6e6e6e;
+  margin-bottom: 0.1875rem;
+}
+.page-trend__genre span {
+  color: #4b4b4b;
+  margin-right: 0.8125rem;
+}
+.page-trend__title-item {
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: clamp(0.875rem, 0.667rem + 0.74vw, 1.125rem);
+  color: #313131;
+  margin-bottom: 0.5625rem;
+}
+.page-trend__paragraph {
+  font-size: clamp(0.625rem, 0.417rem + 0.74vw, 0.875rem) !important;
+  margin-bottom: 1rem;
+}
+.page-trend__text-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 0.625rem;
+     -moz-column-gap: 0.625rem;
+          column-gap: 0.625rem;
+  font-family: Poppins;
+  font-size: clamp(0.563rem, 0.407rem + 0.55vw, 0.75rem);
+}
+.page-trend__text-footer p {
+  font-weight: 500;
+  color: #6e6e6e;
+}
+.page-trend__text-footer a {
+  font-weight: 700;
+  color: #313131;
+}
+.page-trend__text-footer img {
+  position: relative;
+  bottom: 10px;
+}
+.page-trend__arrow-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 1.25rem;
+     -moz-column-gap: 1.25rem;
+          column-gap: 1.25rem;
+}
+.page-trend__arrow-slider__prev img {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
 .paragraph {
   font-family: Poppins;
   font-weight: 400;
@@ -502,10 +622,11 @@ textarea {
   color: #6e6e6e;
 }
 
-@media (max-width: 991px) {
-  .page-new-anime__content > :nth-child(odd):not(:nth-child(1)) {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2; /* Міняємо місцями нечетні елементи з четними */
-  }
+.title {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: clamp(1.25rem, 1.159rem + 0.45vw, 1.5rem);
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #313131;
 }
