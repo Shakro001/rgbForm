@@ -4,36 +4,441 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Товарний Бізнес - Старушкін Артем</title>
     <link rel="stylesheet" href="scss/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>ZORO YO</title>
 </head>
 
 <body>
+
     <div class="wrapper">
-        <header class="header">
-            <section class="header__container">
-                <article class="header__logo">
-                    <h4>
-                        Course: <br> Fundamentals of Commodity Business
-                    </h4>
-                </article>
-                
-                <article class="header__menu" >
-                    <nav>
-                        <a href="#" class="header__link">For whom?</a>
-                        <a href="#" class="header__link">Program</a>
-                        <a href="#" class="header__link">Tariffs</a>
-                        <a href="#" class="header__link">FAQ</a>
-                    </nav>
-                </article>
-                <button class="header__burger">
+
+        <div class="header">
+            <div class="header__container">
+                <div class="header__logo">
+                    <a href="#">ZORO.YO</a>
+                </div>
+                <button class="header__button" type="button">
                     <div></div>
                     <div></div>
                     <div></div>
                 </button>
+                <div class="header__menu">
+                    <nav>
+                        <a href="#" class="header__link active">Home</a>
+                        <a href="#" class="header__link">Connect</a>
+                        <a href="#" class="header__link">Sign up</a>
+                        <a href="#" class="header__link">Login</a>
+                    </nav>
+                </div>
+
+            </div>
+        </div>
+        <main class="main">
+
+            <section class="page-home">
+
+                <div class="page-home__container">
+                    <article class="page-home__text">
+                        <div class="page-home__title">
+                            <h1>
+                                Welcome to ZORO.YO
+                            </h1>
+                        </div>
+                        <div class="page-home__paragraph">
+                            <p>
+                                Get the latest news on your favourite mangas, anime around the world!
+                            </p>
+                        </div>
+                        <div class="page-home__input-box input-box">
+                            <form enctype="multipart/form-data" action="#">
+                                <button type="submit">SUBSCRIBE</button>
+                                <input type="email" id="email_input" placeholder="Enter your email">
+
+                                <button type="submit">
+                                    <img src="img/vectorToForm.svg" alt="vector button">
+                                </button>
+                            </form>
+                        </div>
+                    </article>
+                    <div class="page-home__decor">
+                        <img src="img/page-home/Rectangle 32.png" alt="decor">
+                    </div>
+
+                </div>
+                <div class="page-home__bg">
+                    <img class="page-home__bg" src="img/page-home/bg.webp" alt="bg">
+                </div>
+
+
+
             </section>
-        </header>
+
+
+            <section class="page-new-anime">
+                <div class="page-new-anime__container">
+                    <div class="page-new-anime__title title">
+                        <h2>New & Trendy</h2>
+                    </div>
+                    <article class="page-new-anime__content">
+                        <div class="page-new-anime__item">
+                            <img src="img/page-new-anime/vinland-saga.webp" alt="vinland saga">
+                        </div>
+                        <div class="page-new-anime__item">
+                            <div class="page-new-anime__text-main">
+                                <h5 class="page-new-anime__history">
+                                    <span>History</span>· 1 Month Ago
+                                </h5>
+
+                                <div class="page-new-anime__title-cards">
+                                    <h3>
+                                        vinland saga
+                                    </h3>
+                                </div>
+                                <div class="paragraph page-new-anime__paragraph">
+                                    <p>
+                                        "Vinland Saga" is an epic historical anime that follows the journey of a young
+                                        Viking warrior, blending action, adventure, and complex characters in a riveting
+                                        Norse tale.
+                                    </p>
+                                </div>
+                                <div class="page-new-anime__text-footer">
+                                    <p>
+                                        12 Min Read
+                                    </p>
+                                    <a href="#">Read Full <img src="img/page-new-anime/arrow.svg" alt="arrow"></a>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                        <div class="page-new-anime__item">
+                            <div class="page-new-anime__text-main">
+                                <h5 class="page-new-anime__history">
+                                    <span>Fantasy</span>· 2 Month Ago
+                                </h5>
+
+                                <div class="page-new-anime__title-cards">
+                                    <h3>
+                                        Bleach
+                                    </h3>
+                                </div>
+                                <div class="paragraph page-new-anime__paragraph page-new-anime__paragraph--padding">
+                                    <p>
+                                        "Experience the captivating world of 'Bleach' manga, where a young soul reaper
+                                        battles supernatural threats to protect the living and the afterlife." 🌌👻
+                                    </p>
+                                </div>
+                                <div class="page-new-anime__text-footer">
+                                    <p>
+                                        12 Min Read
+                                    </p>
+                                    <a href="#">Read Full <img src="img/page-new-anime/arrow.svg" alt="arrow"></a>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                        <div class="page-new-anime__item">
+                            <img src="img/page-new-anime/bleach.webp" alt="vinland saga">
+                        </div>
+
+                    </article>
+                </div>
+            </section>
+
+
+            <section class="page-trend">
+                <div class="page-trend__container">
+                    <div class="page-trend__title title">
+                        <h2>Now Trending</h2>
+                        <div class="page-trend__arrow-slider">
+                            <div class="page-trend__prev">
+                                <button>
+                                    <img src="img/page-trend/arrow-back.svg" alt="">  
+                                  </button>
+                            </div>
+                            <div class="page-trend__next">
+                                <button>
+                                  <img src="img/page-trend/arrow.svg" alt="">  
+                                </button>
+                                
+                            </div>
+                        
+                        </div>
+                    </div>
+                    <article class="page-trend__items swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="page-trend__item swiper-slide">
+                                <div class="page-trend__image">
+                                    <img src="img/page-trend/image-1.webp" alt="">
+                                </div>
+                                <div class="page-trend__text">
+                                    <div class="page-trend__genre">
+                                        <span>Fantasy</span>
+                                        · 1 Month Ago 
+                                    </div>
+                                    <div class="page-trend__title-item">
+                                        <h3>
+                                            Attack On Titans
+                                        </h3>
+                                    </div>
+                                    <div class="page-trend__paragraph paragraph">
+                                        <p>
+                                            "Attack on Titan: Gripping manga saga exploring humanity's fight for survival against monstrous titans."
+                                        </p>
+                                    </div>
+                                    <div class="page-trend__text-footer">
+                                        <p>
+                                            12 Min Read
+                                        </p>
+                                        <a href="#">Read Full <img src="img/page-new-anime/arrow.svg" alt="arrow"></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                            <div class="page-trend__item swiper-slide">
+                                <div class="page-trend__image">
+                                    <img src="img/page-trend/image-2.webp" alt="">
+                                </div>
+                                <div class="page-trend__text">
+                                    <div class="page-trend__genre">
+                                        <span>Fantasy</span>
+                                        · 1 Month Ago 
+                                    </div>
+                                    <div class="page-trend__title-item">
+                                        <h3>
+                                            jujutsu kaisen
+                                        </h3>
+                                    </div>
+                                    <div class="page-trend__paragraph paragraph">
+                                        <p>
+                                            "Jujutsu Kaisen: A thrilling manga where cursed spirits, powerful sorcerers, and intense battles collide in a world of dark magic and high-stakes action."
+                                        </p>
+                                    </div>
+                                    <div class="page-trend__text-footer">
+                                        <p>
+                                            12 Min Read
+                                        </p>
+                                        <a href="#">Read Full <img src="img/page-new-anime/arrow.svg" alt="arrow"></a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="page-trend__item swiper-slide">
+                                <div class="page-trend__image">
+                                    <img src="img/page-trend/image-3.webp" alt="">
+                                </div>
+                                <div class="page-trend__text">
+                                    <div class="page-trend__genre">
+                                        <span>Horror</span>
+                                        · 2 Month Ago 
+                                    </div>
+                                    <div class="page-trend__title-item">
+                                        <h3>
+                                            zom 100 bucket list of the dead
+                                        </h3>
+                                    </div>
+                                    <div class="page-trend__paragraph paragraph">
+                                        <p>
+                                            "Zom 100: Bucket List of the Dead manga follows a survivor's quirky journey through a post-apocalyptic world, ticking off a hilarious and heartwarming bucket list."
+                                        </p>
+                                    </div>
+                                    <div class="page-trend__text-footer">
+                                        <p>
+                                            12 Min Read
+                                        </p>
+                                        <a href="#">Read Full <img src="img/page-new-anime/arrow.svg" alt="arrow"></a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="page-trend__item swiper-slide">
+                                <div class="page-trend__image">
+                                    <img src="img/page-trend/image-4.webp" alt="">
+                                </div>
+                                <div class="page-trend__text">
+                                    <div class="page-trend__genre">
+                                        <span>Senen</span>
+                                        · 1 Month Ago 
+                                    </div>
+                                    <div class="page-trend__title-item">
+                                        <h3>
+                                            Hunter X Hunter
+                                        </h3>
+                                    </div>
+                                    <div class="page-trend__paragraph paragraph">
+                                        <p>
+                                            Hunter × Hunter is a Japanese manga series written by Yoshihiro Togashi, published in early 1998 in the Japanese magazine Shonen Jump, which has been repeated frequently in recent years since 2006.
+                                        </p>
+                                    </div>
+                                    <div class="page-trend__text-footer">
+                                        <p>
+                                            12 Min Read
+                                        </p>
+                                        <a href="#">Read Full <img src="img/page-new-anime/arrow.svg" alt="arrow"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+
+                           
+                        </div>
+                    </article>
+                    
+                </div>
+
+            </section>
+
+
+            <section class="page-short">
+                <div class="page-short__container">
+                   <div class="page-short__title title">
+                    <h3>
+                        Short Reads
+                    </h3>
+                    <div class="page-trend__arrow-slider">
+                        <div class="page-trend__prev-short">
+                            <button>
+                                <img src="img/page-trend/arrow-back.svg" alt="">  
+                              </button>
+                        </div>
+                        <div class="page-trend__next-short">
+                            <button>
+                              <img src="img/page-trend/arrow.svg" alt="">  
+                            </button>
+                            
+                        </div>
+                    
+                    </div>
+                </div>
+                <div class="page-short__items swiper-container__short">
+                    <div class="swiper-wrapper">
+                      <div class="page-short__item swiper-slide">
+                        <div class="page-short__img">
+                            <img src="img/page-short/image-1.webp" alt="">
+                        </div>
+                        <div class="page-short__text">
+                           <div class="page-short__title-item">
+                            <h3>
+                                Death Note
+                            </h3>
+                           </div>
+                           <div class="page-short__paragraph">
+                            <p>
+                                "Death Note: Dead Manga - A chilling continuation, mysteries unravel, justice confronts darkness. Gripping sequel."
+                            </p>
+                           </div>
+                        </div>
+                    </div>  
+                    <div class="page-short__item swiper-slide">
+                        <div class="page-short__img">
+                            <img src="img/page-short/image-2.webp" alt="">
+                        </div>
+                        <div class="page-short__text">
+                           <div class="page-short__title-item">
+                            <h3>
+                                Death Note
+                            </h3>
+                           </div>
+                           <div class="page-short__paragraph">
+                            <p>
+                                "Death Note: Dead Manga - A chilling continuation, mysteries unravel, justice confronts darkness. Gripping sequel."
+                            </p>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="page-short__item swiper-slide">
+                        <div class="page-short__img">
+                            <img src="img/page-short/image-3.webp" alt="">
+                        </div>
+                        <div class="page-short__text">
+                           <div class="page-short__title-item">
+                            <h3>
+                                Death Note
+                            </h3>
+                           </div>
+                           <div class="page-short__paragraph">
+                            <p>
+                                "Death Note: Dead Manga - A chilling continuation, mysteries unravel, justice confronts darkness. Gripping sequel."
+                            </p>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="page-short__item swiper-slide">
+                        <div class="page-short__img">
+                            <img src="img/page-short/image-1.webp" alt="">
+                        </div>
+                        <div class="page-short__text">
+                           <div class="page-short__title-item">
+                            <h3>
+                                Death Note
+                            </h3>
+                           </div>
+                           <div class="page-short__paragraph">
+                            <p>
+                                "Death Note: Dead Manga - A chilling continuation, mysteries unravel, justice confronts darkness. Gripping sequel."
+                            </p>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="page-short__item swiper-slide">
+                        <div class="page-short__img">
+                            <img src="img/page-short/image-3.webp
+                            " alt="">
+                        </div>
+                        <div class="page-short__text">
+                           <div class="page-short__title-item">
+                            <h3>
+                                Death Note
+                            </h3>
+                           </div>
+                           <div class="page-short__paragraph">
+                            <p>
+                                "Death Note: Dead Manga - A chilling continuation, mysteries unravel, justice confronts darkness. Gripping sequel."
+                            </p>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="page-short__item swiper-slide">
+                        <div class="page-short__img">
+                            <img src="img/page-short/image-2.webp" alt="">
+                        </div>
+                        <div class="page-short__text">
+                           <div class="page-short__title-item">
+                            <h3>
+                                Death Note
+                            </h3>
+                           </div>
+                           <div class="page-short__paragraph">
+                            <p>
+                                "Death Note: Dead Manga - A chilling continuation, mysteries unravel, justice confronts darkness. Gripping sequel."
+                            </p>
+                           </div>
+                        </div>
+                    </div>
+                    </div>
+
+
+                    
+                    
+
+                    
+
+                    
+                </div>
+                </div>
+                
+            </section>
+
+        </main>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 
