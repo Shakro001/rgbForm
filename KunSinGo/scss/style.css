@@ -1,0 +1,322 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html,
+body {
+  line-height: 1;
+  height: 100%;
+}
+
+/* FORM */
+input,
+button,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+button {
+  color: inherit;
+  background-color: transparent;
+}
+
+button,
+select,
+option {
+  cursor: pointer;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.wrapper {
+  font-family: Mulish, sans-serif;
+}
+
+[class*=__container] {
+  max-width: 76.875rem;
+  padding: 0 0.9375rem;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+.wrapper {
+  min-height: 100vh;
+  overflow: clip;
+}
+
+.header {
+  margin-top: 2rem;
+  margin-bottom: 3.1875rem;
+}
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  gap: 0.75rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 1.4375rem;
+  padding-bottom: 1.4375rem;
+  background-color: #fff;
+  border-radius: 20px;
+}
+.header__menu nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 2rem;
+     -moz-column-gap: 2rem;
+          column-gap: 2rem;
+  row-gap: 1.5rem;
+  line-height: 1.4;
+  color: #14171f;
+}
+@media (max-width: 48.75rem) {
+  .header__menu nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: fixed;
+    height: 100%;
+    width: 60%;
+    top: 0;
+    right: 0;
+    -webkit-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    z-index: 50;
+    padding: 4.375rem 2.5rem;
+    background-color: #636777;
+  }
+}
+.header .header__nav.open {
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
+}
+.header__burger {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 1.125rem;
+     -moz-column-gap: 1.125rem;
+          column-gap: 1.125rem;
+}
+@media (min-width: 48.8125rem) {
+  .header__burger {
+    display: none;
+  }
+}
+.header__burger p {
+  line-height: 1.4;
+  color: #14171f;
+}
+.header__burger-menu {
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+.header__burger-menu.active {
+  overflow: hidden;
+}
+.header__burger-menu.active div:nth-child(1) {
+  -webkit-transform: translateY(4px) rotate(45deg);
+      -ms-transform: translateY(4px) rotate(45deg);
+          transform: translateY(4px) rotate(45deg);
+  margin: 0;
+}
+.header__burger-menu.active div:nth-child(2) {
+  -webkit-transform: translateX(30px);
+      -ms-transform: translateX(30px);
+          transform: translateX(30px);
+  margin: 0;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.header__burger-menu.active div:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  margin: 0;
+}
+.header__burger-menu div:nth-child(1) {
+  width: 100%;
+  height: 2px;
+  background-color: #14171f;
+  margin-bottom: 0.3125rem;
+  border-radius: 50px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.header__burger-menu div:nth-child(2) {
+  width: 100%;
+  height: 2px;
+  background-color: #14171f;
+  margin-bottom: 0.3125rem;
+  border-radius: 50px;
+}
+.header__burger-menu div:nth-child(3) {
+  width: 100%;
+  height: 2px;
+  background-color: #14171f;
+  border-radius: 50px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+@media (any-hover: hover) {
+  .header__link:hover {
+    text-decoration: underline;
+  }
+}
+.header__exchange {
+  line-height: 1.4;
+  color: #14171f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header__exchange span {
+  font-weight: 700;
+  color: #69c647;
+}
+.header__media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 0.875rem;
+     -moz-column-gap: 0.875rem;
+          column-gap: 0.875rem;
+}
+.header__media-link img {
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+.header__media-link img:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.header__contact {
+  font-size: 12px;
+  line-height: 1.4;
+  color: #323847;
+  text-align: right;
+}
+.header__contact span {
+  font-size: 16px;
+  line-height: 1.4;
+  color: #14171f;
+}
+
+.page-home {
+  top: 0;
+  z-index: -1;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+}
+.page-home__container {
+  overflow: hidden;
+  margin-top: 10.6875rem;
+}
+.page-home__bg {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+}
+.page-home__bg img {
+  width: 100%;
+  height: 100%;
+}
+.page-home__text {
+  padding-top: 6.4375rem;
+  max-width: 37.5rem;
+}
+.page-home__title {
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 1.1;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+.page-home__paragraph {
+  max-width: 27.375rem;
+  margin-bottom: 3rem;
+}
+.page-home__paragraph p {
+  color: #fff;
+}
+.page-home__button button {
+  line-height: 1.4;
+  color: #fff;
+  border-radius: 100px;
+  padding: 1rem 1.5rem;
+  background: #69c647;
+}
+
+.paragraph {
+  line-height: 1.4;
+  color: #323847;
+}
