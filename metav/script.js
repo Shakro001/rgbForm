@@ -9,3 +9,14 @@ function header(){
     })
 }
 header()
+
+
+new Swiper('.page-video__items', {
+
+    slidesPerView: 1,
+    spaceBetween: 54,
+    speed: 1200,
+    // breakpoints: {
+    // },
+
+})
