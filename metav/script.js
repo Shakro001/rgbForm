@@ -55,3 +55,75 @@ window.onload = function () {
     }
 
 }
+
+
+const time = 1500;
+const step = 2;
+
+function outNum(num, elem) {
+    let l = document.querySelector('.' + elem,);
+    let n = 0;
+    let t = Math.round(time / (num / step));
+    let interval;
+
+    function updateNumber() {
+        if (n < num) {
+            n += step;
+            l.innerHTML = n-1;
+            setTimeout(updateNumber, t);
+        }
+    }
+
+    updateNumber();
+}
+
+outNum(15, 'page-home__num--zero');
+outNum(41, 'page-home__num--one');
+outNum(29, 'page-home__num--two');
+
+
+function onEntry(entry) {
+    entry.forEach(change => {
+      if (change.isIntersecting) {
+       change.target.classList.add('vis');
+      }
+    });
+  }
+  
+  let options = {
+    threshold: [0.1] };
+  let observer = new IntersectionObserver(onEntry, options);
+  let elements = document.querySelectorAll('.header');
+  let page = document.querySelectorAll('.page-home__right-content');
+  let titleHome = document.querySelectorAll('.page-home__title');
+  let about = document.querySelectorAll('.page-about');
+  let text = document.querySelectorAll('.page-func__text');
+  let func = document.querySelectorAll('.page-func__items');
+  let videoText = document.querySelectorAll('.page-video__text');    
+  let video = document.querySelectorAll('.page-video__items')
+  for (let elm of elements) {
+    observer.observe(elm);
+  }
+  for (let elm of page) {
+    observer.observe(elm);
+  }
+  for (let elm of titleHome) {
+    observer.observe(elm);
+  }
+  for (let elm of about) {
+    observer.observe(elm);
+  }
+  for (let elm of text) {
+    observer.observe(elm);
+  }
+  for (let elm of func) {
+    observer.observe(elm);
+  }
+  for (let elm of videoText) {
+    observer.observe(elm);
+  }
+  for (let elm of video) {
+    observer.observe(elm);
+  }
+  
+

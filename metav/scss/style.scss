@@ -7,27 +7,23 @@ body {
     color: #fff;
     font-family: "Poppins", sans-serif;
     overflow-x: hidden;
-   
 }
 
 .wrapper {
     overflow: clip;
     min-height: 100vh;
     width: 100vw;
-    
-
 }
 
 [class*="__container"] {
     max-width: toRem(1200);
     padding: 0 toRem(15);
     margin: 0 auto;
-   
-    
 }
 
 .header {
     position: relative;
+z-index: 999;
     &__decor {
         background: radial-gradient(40.5% 39.56% at 50% 50%, rgba(170, 20, 240, 0.28), rgba(170, 20, 240, 0) 100%);
         width: 56rem;
@@ -42,16 +38,16 @@ body {
         transform: translateY(toRem(-450));
     }
     // .header__container
-    
+
     margin-bottom: clamp(1.25rem, 0.159rem + 5.45vw, 4.25rem);
-    
-    
+
     &__container {
         padding-top: toRem(45);
         display: flex;
         justify-content: space-between;
         align-items: center;
         position: relative;
+        z-index: 999;
         @media (max-width: toRem(640)) {
             justify-content: space-around;
         }
@@ -71,12 +67,15 @@ body {
     // .header__nav
 
     &__nav {
+        
         nav {
             display: flex;
             column-gap: toRem(50);
             transition: all 0.5s;
+            
             @media (max-width: toRem(640)) {
                 position: fixed;
+                
                 flex-direction: column;
                 row-gap: toRem(30);
                 transform: translateX(100%);
@@ -84,7 +83,8 @@ body {
                 top: 0;
                 padding: toRem(90) 0 0 toRem(30);
                 width: 50%;
-                height: 100%;
+                height: 100vh;
+               
                 background-color: #271d1d;
             }
         }
@@ -166,12 +166,10 @@ body {
     height: 56rem;
     position: absolute;
     z-index: -1;
-    
-    
+
     right: 0;
-    
+
     bottom: 10%;
-    
 }
 
 .page-home {
@@ -384,8 +382,6 @@ body {
     // .page-about__img
     &__img {
         display: flex;
-    
-
     }
 
     // .page-about__frist-img
@@ -396,22 +392,22 @@ body {
         position: relative;
         z-index: 4;
         inset: 0;
-        &:before{
+        &:before {
             content: "";
             position: absolute;
             width: 105%;
             height: 105%;
             z-index: 1;
-            background: linear-gradient(158.4deg,#8c43d4 10.9%,#10a3da 88.221%);
+            background: linear-gradient(158.4deg, #8c43d4 10.9%, #10a3da 88.221%);
             border-bottom-left-radius: toRem(65);
             border-top-right-radius: toRem(65);
         }
-        &:after{
+        &:after {
             content: "";
             position: absolute;
             width: 104%;
             height: 104%;
-            
+
             z-index: 5;
             left: 2px;
             top: 2px;
@@ -419,7 +415,7 @@ body {
             border-bottom-left-radius: toRem(65);
             border-top-right-radius: toRem(65);
         }
-        
+
         img {
             border-bottom-left-radius: toRem(65);
             border-top-right-radius: toRem(65);
@@ -429,7 +425,6 @@ body {
             top: 8px;
             position: relative;
             z-index: 6;
-            
         }
     }
 
@@ -440,23 +435,23 @@ body {
         height: 100%;
         position: relative;
         z-index: 7;
-       
-        &:before{
+
+        &:before {
             content: "";
             position: absolute;
             width: 105%;
             height: 105%;
             z-index: 1;
-            background: linear-gradient(158.4deg,#8c43d4 10.9%,#10a3da 88.221%);
+            background: linear-gradient(158.4deg, #8c43d4 10.9%, #10a3da 88.221%);
             border-bottom-right-radius: toRem(65);
             border-top-left-radius: toRem(65);
         }
-        &:after{
+        &:after {
             content: "";
             position: absolute;
             width: 104%;
             height: 104%;
-            
+
             z-index: 2;
             left: 1px;
             top: 1px;
@@ -604,6 +599,8 @@ body {
         column-gap: toRem(38);
         row-gap: toRem(36);
         justify-content: center;
+        position: relative;
+        z-index: 999;
         @media (max-width: toRem(991)) {
             grid-template-columns: repeat(2, minmax(toRem(300), toRem(335)));
         }
@@ -717,7 +714,7 @@ body {
     &__decor {
         background: radial-gradient(50.5% 39.56% at 50% 50%, rgba(160, 54, 209, 0.28), rgba(170, 20, 240, 0) 100%);
         // background: #7c6666;
-        
+
         position: absolute;
         width: 45rem;
         height: 45rem;
@@ -916,3 +913,82 @@ body {
     font-family: "Poppins", sans-serif;
     font-size: clamp(1rem, 0.85rem + 0.53vw, 1.25rem);
 }
+
+.header__container {
+    transform: translateY(-100px);
+    opacity: 0;
+}
+.header.vis .header__container{
+    transform: translateY(0);
+    opacity: 1;
+    transition: all 1.5s 1s;
+}
+
+.page-home__right-content{
+    transform: translateX(-100px);
+    opacity: 0;
+}
+.page-home__right-content.vis{
+    transform: translateX(0);
+    opacity: 1;
+    transition: all 1.5s;
+}
+.page-home__title{
+    transform: translateY(50px);
+    opacity: 0;
+}
+.page-home__title.vis{
+    transform: translateY(0);
+    opacity: 1;
+    transition: all 1.5s;
+}
+.page-about{
+    transform: translateY(100px);
+    opacity: 0;
+}
+.page-about.vis{
+    transform: translateY(0);
+    opacity: 1;
+    transition: all 1.5s;
+}
+.page-func__text--anim{
+    transform: translateX(100px);
+    opacity: 0;
+}
+.page-func__text--anim.vis{
+    transform: translateX(0);
+    opacity: 1;
+    transition: all 1.5s;
+}
+
+.page-func__items{
+    transform: translateX(-100px);
+    opacity: 0;
+}
+.page-func__items.vis{
+    transform: translateX(0);
+    opacity: 1;
+    transition: all 1.5s;
+}
+
+.page-video__text{
+    transform: translateY(-100px);
+    opacity: 0;
+}
+.page-video__text.vis{
+    transform: translateX(0);
+    opacity: 1;
+    transition: all 2.5s;
+}
+.page-video__items{
+    transform: translateY(100px);
+    opacity: 0;
+}
+.page-video__items.vis{
+    transform: translateX(0);
+    opacity: 1;
+    transition: all 1s;
+}
+
+
+
