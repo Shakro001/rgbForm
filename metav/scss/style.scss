@@ -23,18 +23,21 @@ body {
 
 .header {
     position: relative;
-z-index: 999;
+z-index: 1;
     &__decor {
-        background: radial-gradient(40.5% 39.56% at 50% 50%, rgba(170, 20, 240, 0.28), rgba(170, 20, 240, 0) 100%);
+        background: radial-gradient(40.5% 49.56% at 50% 50%, rgba(170, 20, 240, 0.28), rgba(170, 20, 240, 0) 100%);
         width: 56rem;
         height: 56rem;
         position: absolute;
-        z-index: -1;
-        // left: toRem(420);
+        z-index: -4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
         left: 0;
-        right: 0;
-        top: 0;
-        // right: 0;
+        
+        top: 100%;
+        
         transform: translateY(toRem(-450));
     }
     // .header__container
@@ -221,7 +224,7 @@ z-index: 999;
         align-items: center;
         margin-bottom: toRem(40);
         position: relative;
-        z-index: 100;
+        z-index: 99;
         @media (max-width: toRem(1017)) {
             justify-content: center;
         }
@@ -231,7 +234,7 @@ z-index: 999;
 
     &__first-button {
         position: relative;
-        z-index: 100;
+        z-index: 99;
         a {
             font-family: "Poppins", sans-serif;
             font-weight: 500;
@@ -239,7 +242,9 @@ z-index: 999;
             position: relative;
             border-radius: 5px;
             padding: toRem(16) toRem(29);
-
+            
+          
+        z-index: 99;
             &:after {
                 content: "";
                 position: absolute;
@@ -250,6 +255,7 @@ z-index: 999;
                 z-index: -1;
                 transition: all 0.5s;
                 border-radius: 5px;
+
             }
             &:before {
                 content: "";
@@ -273,8 +279,10 @@ z-index: 999;
 
     &__second-button {
         position: relative;
-        z-index: 100;
+        z-index: 99;
         a {
+            position: relative;
+            z-index: 999;
             font-family: "Poppins", sans-serif;
             font-weight: 500;
             font-size: clamp(1.125rem, 1.05rem + 0.27vw, 1.25rem);
@@ -915,10 +923,10 @@ z-index: 999;
 }
 
 .header__container {
-    transform: translateY(-100px);
+    transform: translateY(-50px);
     opacity: 0;
 }
-.header.vis .header__container{
+.header__container.vis{
     transform: translateY(0);
     opacity: 1;
     transition: all 1.5s 1s;

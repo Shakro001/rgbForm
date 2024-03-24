@@ -93,14 +93,16 @@ function onEntry(entry) {
   let options = {
     threshold: [0.1] };
   let observer = new IntersectionObserver(onEntry, options);
-  let elements = document.querySelectorAll('.header');
+  let elements = document.querySelectorAll('.header__container');
   let page = document.querySelectorAll('.page-home__right-content');
   let titleHome = document.querySelectorAll('.page-home__title');
   let about = document.querySelectorAll('.page-about');
   let text = document.querySelectorAll('.page-func__text');
   let func = document.querySelectorAll('.page-func__items');
   let videoText = document.querySelectorAll('.page-video__text');    
-  let video = document.querySelectorAll('.page-video__items')
+  let video = document.querySelectorAll('.page-video__items');
+
+
   for (let elm of elements) {
     observer.observe(elm);
   }
