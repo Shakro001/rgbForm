@@ -23,7 +23,7 @@ body {
 
 .header {
     position: relative;
-z-index: 1;
+z-index: 1000;
     &__decor {
         background: radial-gradient(40.5% 49.56% at 50% 50%, rgba(170, 20, 240, 0.28), rgba(170, 20, 240, 0) 100%);
         width: 56rem;
