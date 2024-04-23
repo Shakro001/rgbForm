@@ -94,7 +94,7 @@ body {
 
 .header {
   position: relative;
-  z-index: 1000;
+  z-index: 1;
   margin-bottom: clamp(1.25rem, 0.159rem + 5.45vw, 4.25rem);
 }
 .header__decor {
@@ -102,7 +102,7 @@ body {
   width: 56rem;
   height: 56rem;
   position: absolute;
-  z-index: -4;
+  z-index: -3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -130,7 +130,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  z-index: 999;
+  z-index: 5;
 }
 @media (max-width: 40rem) {
   .header__container {
@@ -144,6 +144,10 @@ body {
   font-size: 22px;
   color: #fff;
 }
+.header__nav {
+  position: relative;
+  z-index: 5;
+}
 .header__nav nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -153,6 +157,8 @@ body {
           column-gap: 3.125rem;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  position: relative;
+  z-index: 5;
 }
 @media (max-width: 40rem) {
   .header__nav nav {
@@ -321,7 +327,7 @@ body {
           align-items: center;
   margin-bottom: 2.5rem;
   position: relative;
-  z-index: 99;
+  z-index: 9;
 }
 @media (max-width: 63.5625rem) {
   .page-home__buttons {

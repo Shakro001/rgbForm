@@ -22,20 +22,19 @@ body {
 }
 
 .header {
-    position: relative;
-z-index: 1000;
+position: relative;
+z-index: 1;
     &__decor {
         background: radial-gradient(40.5% 49.56% at 50% 50%, rgba(170, 20, 240, 0.28), rgba(170, 20, 240, 0) 100%);
         width: 56rem;
         height: 56rem;
         position: absolute;
-        z-index: -4;
+        z-index: -3;
         display: flex;
         justify-content: center;
         align-items: center;
         
         left: 0;
-        
         top: 100%;
         
         transform: translateY(toRem(-450));
@@ -50,7 +49,7 @@ z-index: 1000;
         justify-content: space-between;
         align-items: center;
         position: relative;
-        z-index: 999;
+        z-index: 5;
         @media (max-width: toRem(640)) {
             justify-content: space-around;
         }
@@ -70,12 +69,14 @@ z-index: 1000;
     // .header__nav
 
     &__nav {
-        
+        position: relative;
+        z-index: 5;
         nav {
             display: flex;
             column-gap: toRem(50);
             transition: all 0.5s;
-            
+            position: relative;
+        z-index: 5;
             @media (max-width: toRem(640)) {
                 position: fixed;
                 
@@ -224,7 +225,7 @@ z-index: 1000;
         align-items: center;
         margin-bottom: toRem(40);
         position: relative;
-        z-index: 99;
+        z-index: 9;
         @media (max-width: toRem(1017)) {
             justify-content: center;
         }
