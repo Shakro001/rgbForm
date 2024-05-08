@@ -1,0 +1,306 @@
+@import "fonts.scss";
+@import "function.scss";
+@import "reset.scss";
+
+:root {
+    --font-family: "Montserrat", sans-serif;
+    --second-family: "Inter", sans-serif;
+    --third-family: "Cooper Black", sans-serif;
+}
+
+.wrapper {
+    overflow: clip;
+    height: 100vh;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+}
+
+[class*="__container"] {
+    max-width: toRem(1300);
+    padding: 0 toRem(15);
+    margin: 0 auto;
+    border: 1px solid #fff;
+    
+}
+
+.header {
+    // .header__container
+    position: relative;
+    margin-bottom: toRem(66);
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        column-gap: toRem(15);
+    }
+
+    &__logo {
+        position: relative;
+        z-index: 3;
+        &.active {
+            transform: translateX(40%) scale(1.1);
+        }
+    }
+
+    // .header__menu
+
+    &__menu {
+        display: flex;
+        column-gap: toRem(45);
+        @media (max-width: toRem(991)) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            z-index: 2;
+            inset: 0;
+            width: 100%;
+            height: 40vh;
+            background-color: #000;
+            padding: 30% 0 0 0;
+            row-gap: toRem(18);
+            transform: translateY(-100%);
+            opacity: 0;
+            &.active {
+                transform: translate(0);
+                opacity: 1;
+            }
+        }
+    }
+
+    // .header__link
+
+    &__link {
+        font-family: var(--font-family);
+        font-weight: 500;
+        transition: color 0.3s;
+        @media (any-hover: hover) {
+            &:hover {
+                color: #c4a4a4;
+            }
+        }
+        @media (max-width: toRem(991)) {
+        }
+    }
+
+    // .header__button
+
+    &__button {
+        a {
+            font-family: var(--font-family);
+            font-weight: 500;
+            font-size: toRem(15);
+            box-shadow: 0 6px 24px 0 rgba(249, 215, 255, 0.25);
+            background: linear-gradient(to right, #ae10c8 20%, #370040);
+            padding: toRem(18) toRem(40);
+            position: relative;
+            z-index: 1;
+            border-radius: 7px;
+            &:before {
+                content: "";
+                position: absolute;
+                z-index: -1;
+                inset: 0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(to right, #370040, #ae10c8);
+                opacity: 0;
+                transition: opacity 0.6s;
+                border-radius: 7px;
+            }
+            @media (any-hover: hover) {
+                &:hover:before {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    // .header__button--adaptive
+
+    &__button--adaptive {
+        @media (min-width: toRem(991)) {
+            display: none;
+        }
+    }
+
+    // .header__button--display
+
+    &__button--display {
+        @media (max-width: toRem(991)) {
+            display: none;
+        }
+    }
+
+    // .header__burger
+
+    &__burger {
+        width: 32px;
+        height: 20px;
+        position: relative;
+        @media (min-width: toRem(991)) {
+            display: none;
+        }
+
+        & div {
+            position: absolute;
+            width: 95%;
+            height: 2px;
+            background-color: #fff;
+            left: 0;
+            border-radius: 50px;
+        }
+        & div:nth-child(1) {
+            top: 0;
+        }
+
+        & div:nth-child(2) {
+            width: 75%;
+            top: 8px;
+        }
+
+        & div:nth-child(3) {
+            top: 16px;
+        }
+    }
+
+    &__burger-link {
+    }
+    &__burger-close {
+        margin: 15px;
+        height: 19px;
+        width: 19px;
+        position: relative;
+        & div:nth-child(1) {
+            width: 100%;
+            height: 2px;
+            background-color: #fff;
+            transform: rotate(45deg);
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 50px;
+        }
+        & div:nth-child(2) {
+            width: 100%;
+            height: 2px;
+            background-color: #fff;
+            transform: rotate(-45deg);
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 50px;
+        }
+    }
+    &__burger-close {
+        @media (min-width: toRem(991)) {
+            display: none;
+        }
+    }
+}
+
+.main {
+    
+    // .main__container
+
+    &__container {
+    }
+}
+.page-home {
+    // .page-home__brands
+    position: relative;
+    &__brands {
+        display: flex;
+        align-items: center;
+        column-gap: toRem(38);
+        margin-bottom: toRem(33);
+        border: 1px solid #fff;
+  
+        position: relative;
+        animation: run 5s linear infinite;
+        @keyframes run {
+            0%{
+                transform: translateX(100%);
+            }
+            100%{
+                transform: translateX(-120%);
+            }
+        }
+    img{
+        width: 100%;
+        height: 100%;
+    }
+        
+    }
+ 
+ 
+      
+      
+    
+
+    // .page-home__title
+
+    &__title {
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: clamp(1.563rem, 0.438rem + 4vw, 3.438rem);
+        margin-bottom: toRem(30);
+        max-width: toRem(800);
+    }
+
+    // .page-home__paragraph
+
+    &__paragraph {
+        max-width: toRem(441);
+        margin-bottom: toRem(75);
+    }
+
+    // .page-home__button
+
+    &__button {
+    }
+
+    // &__left {
+    //     display: flex;
+    //     flex-direction: column;
+    //     max-width: toRem(750);
+    // }
+}
+.button {
+    a {
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: toRem(15);
+        border-radius: 7px;
+        padding: toRem(18) toRem(39);
+        box-shadow: 0 6px 24px 0 rgba(249, 215, 255, 0.25);
+        background: linear-gradient(90deg, #ae10c8 0%, #370040 100%);
+        position: relative;
+        z-index: 1;
+        
+        &:before{
+            content: "";
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, #370040 0%, #ae10c8 100%);
+            border-radius: 7px;
+            z-index: -1;
+            opacity: 0;
+            transition: opacity .5s;
+            
+        }
+        @media (any-hover: hover) {
+            &:hover:before {
+                opacity: 1;
+            }
+        }
+       
+    }
+}
+.paragraph {
+    font-family: var(--font-family);
+    font-size: clamp(0.875rem, 0.8rem + 0.27vw, 1rem);
+}

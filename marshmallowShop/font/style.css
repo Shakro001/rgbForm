@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Cooper Black';
+    src: local('Cooper Black Regular'), local('Cooper-Black-Regular'),
+        url('CooperBlackStd.woff2') format('woff2'),
+        url('CooperBlackStd.woff') format('woff'),
+        url('CooperBlackStd.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
