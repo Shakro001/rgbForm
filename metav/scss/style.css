@@ -94,7 +94,7 @@ body {
 
 .header {
   position: relative;
-  z-index: 1;
+  z-index: 100;
   margin-bottom: clamp(1.25rem, 0.159rem + 5.45vw, 4.25rem);
 }
 .header__decor {
@@ -130,7 +130,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  z-index: 5;
+  z-index: 100;
 }
 @media (max-width: 40rem) {
   .header__container {
@@ -146,7 +146,7 @@ body {
 }
 .header__nav {
   position: relative;
-  z-index: 5;
+  z-index: 100;
 }
 .header__nav nav {
   display: -webkit-box;
@@ -158,11 +158,12 @@ body {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   position: relative;
-  z-index: 5;
+  z-index: 100;
 }
 @media (max-width: 40rem) {
   .header__nav nav {
     position: fixed;
+    z-index: 100;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -196,6 +197,7 @@ body {
   position: relative;
   width: 1.125rem;
   height: 0.75rem;
+  z-index: 102;
 }
 @media (min-width: 40rem) {
   .header__burger {
@@ -274,7 +276,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  z-index: 100;
+  z-index: 99;
 }
 @media (max-width: 63.5625rem) {
   .page-home {
