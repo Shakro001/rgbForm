@@ -23,13 +23,13 @@ body {
 
 .header {
 position: relative;
-z-index: 100;
+z-index: 4;
     &__decor {
         background: radial-gradient(40.5% 49.56% at 50% 50%, rgba(170, 20, 240, 0.28), rgba(170, 20, 240, 0) 100%);
         width: 56rem;
         height: 56rem;
         position: absolute;
-        z-index: -3;
+        z-index: -2;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -182,7 +182,10 @@ z-index: 100;
     position: relative;
     display: flex;
     width: 100%;
-    z-index: 99;
+    
+    @media(min-width: toRem(640)){
+        z-index: 5;
+    }
     @media (max-width: toRem(1017)) {
         flex-direction: column;
         row-gap: toRem(20);

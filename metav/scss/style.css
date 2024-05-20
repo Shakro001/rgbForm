@@ -94,7 +94,7 @@ body {
 
 .header {
   position: relative;
-  z-index: 100;
+  z-index: 4;
   margin-bottom: clamp(1.25rem, 0.159rem + 5.45vw, 4.25rem);
 }
 .header__decor {
@@ -102,7 +102,7 @@ body {
   width: 56rem;
   height: 56rem;
   position: absolute;
-  z-index: -3;
+  z-index: -2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -276,7 +276,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  z-index: 99;
+}
+@media (min-width: 40rem) {
+  .page-home {
+    z-index: 5;
+  }
 }
 @media (max-width: 63.5625rem) {
   .page-home {
