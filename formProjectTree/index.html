@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scss/style.css">
+    <link rel="icon" type="image/x-icon" href="/img/faviicon.svg">
+    <title id="title">Login</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <div class="header__logo">
+                    <a href="#">
+                      Tree  
+                    </a>
+                    
+                </div>
+                <nav class="header__nav">
+                    <a href="#" id="header__about" class="header__link">About us</a>
+                    <a href="#" class="header__link">Menu</a>
+                    <a href="#" class="header__link">Register</a>
+                    <a href="#" class="header__link">Invite</a>
+                </nav>
+                <button type="button" class="header__burger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </button>
+                <div class="header__button">
+                    <button>Login</button>
+                </div>
+            </div>
+        </header>
+    
+    <div class="wrapper-form">
+       
+        <div class="main__form form">
+
+            <button type="button"  class="form__close-button">
+                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M289.94 256l95-95A24 24 0 00351 127l-95 95-95-95a24 24 0 00-34 34l95 95-95 95a24 24 0 1034 34l95-95 95 95a24 24 0 0034-34z"/></svg>
+            </button>
+            <div class="form__login">
+              <h1 class="form__title">Login</h1>
+
+            <form action="#" enctype="multipart/form-data">
+                <div class="form__input-box">
+
+                    <div class="form__input">
+
+                        <img src="img/mailIcon.svg" alt="emailIcon" class="form__icon-input">
+                        <input autocomplete="off" id="email" name="?" type="text" required>
+                        <label for="email">Email</label>
+                    </div>
+
+                    <div class="form__input">
+
+                        <img src="img/lockIcon.svg" alt="passwordlIcon" class="form__icon-input form__icon-input--pass">
+
+
+                        <input  id="pass1" name="?" type="password" required>
+                        <label for="pass1">Password</label>
+                    </div>
+
+
+                </div>
+
+
+                <div class="form__accept">
+                    <div class="form__checkbox">
+                        <input id="check" name="?" type="checkbox">
+                        <label for="check">Remember me</label>
+                    </div>
+                    <div class="form__fargot">
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                </div>
+
+                <div class="form__button">
+                    <button type="submit">Login</button>
+                </div>
+
+                <div class="form__register">
+                    <p>Dont have an account? <a class="registerButton" href="#">Register</a></p>
+                </div>
+
+            </form>  
+            </div>
+
+            <div class="form__registers">
+                <h1 class="form__title">Register</h1>
+
+                <form action="#" enctype="multipart/form-data">
+                    <div class="form__input-box">
+
+                        <div class="form__input">
+    
+                            <img src="img/personIcon.svg" alt="userIcon" class="form__icon-input">
+                            <input maxlength="15" autocomplete="off" id="username" name="?" type="text" required>
+                            <label for="username">Username</label>
+                        </div>
+    
+                        <div class="form__input">
+    
+                            <img src="img/mailIcon.svg" alt="emailIcon" class="form__icon-input">
+                            <input autocomplete="off" id="email" name="?" type="text" required>
+                            <label for="email">Email</label>
+                        </div>
+
+                        
+    
+                        <div class="form__input">
+    
+                            <img src="img/lockIcon.svg" alt="passwordlIcon" class="form__icon-input form__icon-input--pass">
+    
+    
+                            <input id="pass2" name="?" type="password" required>
+                            <label for="pass2">Password</label>
+                        </div>
+    
+    
+                    </div>
+    
+    
+    
+                    <div class="form__accept">
+                        <div class="form__checkbox">
+                            <input required id="checkReg" name="?" type="checkbox">
+                            <label for="checkReg">Access??</label>
+                        </div>
+                    </div>
+    
+                    <div class="form__button">
+                        <button type="submit">Register</button>
+                    </div>
+    
+                    <div class="form__register">
+                        <p>have an account? <a class="registerButton" href="#">Login</a></p>
+                    </div>
+    
+                </form> 
+            </div>
+            
+
+            
+        </div>
+        
+    </div>
+
+</div>
+    <script src="script.js"></script>
+</body>
+
+</html>
