@@ -1,0 +1,176 @@
+@import "fonts.scss";
+@import "function.scss";
+@import "reset.scss";
+
+body {
+    font-family: "Hind Siliguri", sans-serif;
+}
+
+:root {
+    --dark: #292830;
+    --light: #bdbdbd;
+    --main-color: #ff7235;
+    --background: #fff;
+}
+
+[class*="__container"] {
+    max-width: toRem(1140);
+    padding: 0 toRem(15);
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+.wrapper {
+    min-height: 100vh;
+    width: 100%;
+    overflow: clip;
+}
+
+.header {
+    margin-top: toRem(60);
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        column-gap: toRem(20);
+        position: relative;
+    }
+
+    // .header__logo
+
+    &__logo {
+        img {
+            margin-right: clamp(0.313rem, 0.041rem + 0.95vw, 0.75rem);
+            vertical-align: middle;
+        }
+        font-weight: 500;
+        font-size: toRem(24);
+        line-height: 95%;
+        color: var(--dark);
+        position: relative;
+        z-index: 2;
+    }
+
+    // .header__nav
+
+    &__nav {
+        display: flex;
+        column-gap: toRem(40);
+        font-size: toRem(18);
+        line-height: 95%;
+        color: var(--dark);
+        @media (max-width: toRem(790)) {
+            flex-direction: column;
+            position: absolute;
+            inset: 0;
+            width: 60%;
+            height: 100vh;
+            background-color: #ff7235;
+            align-items: end;
+            padding: toRem(65) toRem(25) 0 0;
+            row-gap: toRem(25);
+            transition: transform 0.4s;
+            transform: translateX(-101%);
+        }
+        &.active {
+            transform: translateX(0);
+        }
+    }
+
+    // .header__link
+
+    &__link {
+        position: relative;
+        &:before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            height: 1px;
+            width: 0;
+            background-color: #000;
+            border-radius: 50px;
+            transition:
+                width 0.45s,
+                left 0.45s;
+            transform: translateY(1px);
+        }
+        @media (any-hover: hover) {
+            &:hover:before {
+                width: 100%;
+                left: 0;
+            }
+        }
+        &--button{
+            @media(min-width: toRem(570)){
+                display: none;
+            }
+        }
+    }
+
+    // .header__button
+
+    &__button {
+        @media(max-width: toRem(570)){
+            display: none;
+        }
+        a {
+            font-size: toRem(18);
+            line-height: 95%;
+            color: var(--main-color);
+            padding: toRem(16) toRem(18);
+            border: 1px solid var(--main-color);
+            border-radius: 8px;
+            transition:
+                background 0.3s,
+                color 0.5s;
+            @media (any-hover: hover) {
+                &:hover {
+                    background-color: var(--main-color);
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    &__burger {
+        @media (min-width: toRem(790)) {
+            display: none;
+        }
+        width: 32px;
+        height: 20px;
+        position: relative;
+        z-index: 3;
+        & span {
+            position: absolute;
+            left: 0;
+            height: 3px;
+            width: 100%;
+            background-color: #1b1616;
+            border-radius: 50px;
+            transition: all 0.4s;
+        }
+        & span:nth-child(1) {
+            top: 0;
+        }
+        & span:nth-child(2) {
+            top: 9px;
+        }
+        & span:nth-child(3) {
+            top: 18px;
+        }
+        &.active {
+            & span:nth-child(1) {
+                top: 9px;
+                transform: rotate(45deg);
+            }
+            & span:nth-child(2) {
+                opacity: 0;
+            }
+            & span:nth-child(3) {
+                top: 9px;
+                transform: rotate(-45deg);
+            }
+        }
+    }
+}
